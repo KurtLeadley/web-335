@@ -1,5 +1,5 @@
 ## Title: leadley_hello_world.py
-## Author: Kurt Leadley, Professor Krasso
+## Author: Kurt Leadley
 ## Date: 12/4/2019
 ## Description: Add, Subtract, Divide example, using functions and variables. 
 
@@ -7,6 +7,7 @@
 fn = "Kurt"
 ln = "Leadley"
 assignment = "Exercise 8.2"
+## header function
 def header(fn,ln,assignment):
     return print(fn+' '+ln+' '+assignment)
 
@@ -18,12 +19,14 @@ def add(n1,n2):
         return n1 + n2
     except:
         return "Type Error"
+## subtract function
 def subtract(n1,n2):
     # try to subtract
     try:
         return n1 - n2
     except:
         return "Type Error"
+## divide function
 def divide(n1,n2):
     ## make sure n2 does not equal zero
     if n2 == 0:
