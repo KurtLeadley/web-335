@@ -1,0 +1,95 @@
+// Authors: Kurt Leadley, Karie Funk, Wendy Portillo, Josh Hughes
+// Class: Web 335 
+// Assignment: 8.4
+// Instructore: Professor Krasso
+// Date: December 9th, 2019
+// Description: JSON  structure
+
+
+// Video JSON model
+
+{
+    "video_name" : "War of Chairs",
+    "video_type" : "Series",
+    "video_season" : 1,
+    "video_episode" : 1,
+    "video_permission" : "R",
+    "genre" : ["Fantasy","Adventure"]
+}
+
+// Customer JSON model
+
+{
+    "cust_first_name" : "Miles",
+    "cust_last_name" : "Horton",
+    "cust_email" : "m.horton@email.com",
+    "cust_user_name" : "TimHorton",
+    "cust_date_of_birth" : "01-12-1930",
+    "cust_subscription" : {
+        "subscription_type" : "Basic",
+        "date_created" : "04-01-2019",
+        "date_expires" : "05-01-2019"
+    },
+    "cust_billing_address" : {
+        "street" : "123 Maple",
+        "City" : "Toronto",
+        "State" : "Ontario",
+        "Country" : "Canada",
+        "Zip" : "12345-35"
+    },
+    "cust_sub_user" : [
+        {
+            "sub_user_name" : "LittleHorton2011",
+            "sub_user_permission_level" : "PG"
+        },
+        {
+            "sub_user_name" : "WifeHorton",
+            "sub_user_permission_level" : "ALL"
+        }
+    ],
+    "cust_payment_option" : [
+        {
+            "cust_payment_option_id" : 1,
+            "cust_payment_type" : "creditcard",
+            "cust_payment_first_name" : "Miles",
+            "cust_payment_last_name" : "Horton",
+            "cust_payment_cc_num" : 12356-43434-343-34,
+            "cust_payment_cvc_num" : 123,
+            "cust_payment_exp_date" : "01-01-2021"
+        },
+        {
+            "cust_payment_option_id" : 2,
+            "cust_payment_type" : "paypal",
+            "cust_payment_first_name" : "Miles",
+            "cust_payment_last_name" : "Horton",
+            "cust_payment_paypal_password" : "password",
+            "cust_payment_paypal_token" : "gdg#%34ggg$%y7593GdvS0@$v"
+        }
+    ],
+    "cust_transaction" : [
+        {
+           "trxn_id" : 1,
+           "trxn_date" : "04-01-2019",
+           "order_item" : "Basic",
+           "recurring_payment" : 1,
+           "amount" : 9.99,
+           "payment_option" : 1
+        },
+        {
+            "trxn_id" : 2,
+            "trxn_date" : "05-01-2019",
+            "order_item" : "Basic",
+            "recurring_payment" : 1,
+            "amount" : 9.99,
+            "payment_option" : 2
+         },
+         {
+            "trxn_id" : 3,
+            "trxn_date" : "05-01-2019",
+            "order_item" : "Gold",
+            "recurring_payment" : 1,
+            "amount" : 19.99,
+            "payment_option" : 2
+         }
+    ]
+}
